@@ -3,7 +3,7 @@ CREATE TABLE `actor` (
   `first_name` varchar(45) NOT NULL,
   `last_name` varchar(45) NOT NULL,
   `last_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `nickname` varchar(50) DEFAULT NULL,
+  `nickname` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`actor_id`),
   KEY `idx_actor_last_name` (`last_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
